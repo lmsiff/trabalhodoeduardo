@@ -1,11 +1,5 @@
-class ColorChanger {
-    constructor(cssVariable) {
-        this.cssVariable = cssVariable;
-    }
-
-    changeColor(newColor) {
-        document.documentElement.style.setProperty(this.cssVariable, newColor);
-    }
+const changeRootClass = (selectedClass) => {
+    const root = document.querySelector('html');
+    root.className = ''
+    root.classList.add(selectedClass)
 }
-
-const colorChanger = new ColorChanger('--color-primary');

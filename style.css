@@ -6,8 +6,19 @@
     font-family: 'Poppins', sans-serif;
 }
 
-:root {
+.green:root {
     --color-primary: #21be5bff;
+    --soft-primary: #9dddb7;
+}
+
+.blue:root {
+    --color-primary: #015afe;
+    --soft-primary: #9db1dd;
+}
+
+.purple:root {
+    --color-primary: #8e0cc1;
+    --soft-primary: #c69ddd;
 }
 
 body {
@@ -75,7 +86,10 @@ aside {
     background-color: #ffffff;
     border-radius: 42px;
     border: 5px solid black;
-    padding: 20px 8px;
+}
+
+.project-initial {
+    padding: 15px;
 }
 
 .project-capa {
@@ -133,6 +147,10 @@ aside {
     gap: 5px;
 }
 
+.screen-bottom strong{
+    color: var(--color-primary);
+}
+
 .sign-buttons {
     display: flex;
     gap: 8px;
@@ -172,7 +190,18 @@ aside {
 
 header {
     display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: var(--color-primary);
+    border-radius: 36px 36px 30px 30px;
+    color: #fff;
+    padding: 20px 15px 30px 15px;
+}
+
+.header-top {
+    display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 20px;
 }
 
@@ -185,6 +214,16 @@ header {
     transform: 0.25s ease-in-out;
 }
 
+.header-bottom h2 {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.header-bottom p {
+    font-weight: 400;
+    font-size: 12px;
+}
+
 .profile-image img:hover {
     border: 2px solid greenyellow;
 }
@@ -195,7 +234,6 @@ h2 {
 
 small {
     font-size: 12px;
-    color: gray;
 }
 
 section {
@@ -243,13 +281,55 @@ section .card button {
     cursor: pointer;
 }
 
+.escolhas {
+    padding: 0px 8px;
+}
+
 .escolhas-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
     color: #223;
     font-weight: bold;
     font-size: 13px;
-    -webkit-box-shadow: 0px 0px 5px 1.5px rgba(0,0,0,0.21);
-    -moz-box-shadow: 0px 0px 5px 1.5px rgba(0,0,0,0.21);
-    box-shadow: 0px 0px 5px 1.5px rgba(0,0,0,0.21);
-    border-radius: 12px;
-    padding: 20px;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.21);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.21);
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.21);
+    border-radius: 10px;
+    padding: 10px 8px;
+}
+
+.escolhas-card__left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-title{
+    font-size: 14px;
+}
+
+.card-description{
+    color: rgb(108, 108, 108);
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.escolhas-icon {
+    background: var(--soft-primary);
+    color: #223;
+    border-radius: 10px;
+    padding: 2px;
+    font-size: 18px;
+}
+
+.escolhas-icon i{
+    border: 2px solid #fff;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.escolhas-arrow {
+    color: var(--soft-primary);
+    font-size: 20px;
 }

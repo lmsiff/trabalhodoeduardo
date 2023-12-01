@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="blue">
+<html lang="en" class="green">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +8,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
     <main>
         <aside>
             Clique nos botões para trocar a cor principal da interface !
             <div style="display: flex; gap: 20px;">
-                <div class="picker-option picker-option--blue" onclick="colorChanger.changeColor('#015afe')"></div>
-                <div class="picker-option picker-option--green" onclick="colorChanger.changeColor('#21be5bff')"></div>
-                <div class="picker-option picker-option--purple" onclick="colorChanger.changeColor('#8e0cc1')"></div>
+                <div class="picker-option picker-option--blue" onclick="changeRootClass('blue')"></div>
+                <div class="picker-option picker-option--green" onclick="changeRootClass('green')"></div>
+                <div class="picker-option picker-option--purple" onclick="changeRootClass('purple')"></div>
             </div>
         </aside>
         <div class="container">
@@ -51,38 +53,36 @@
                 <p style="text-align: center; font-weight: bold;">Tela inicial do app</p>
                 <div class="project">
                     <header>
-                        <div class="profile-image">
-                            <img src="./usuario.png">
+                        <div class="header-top">
+                            <div class="profile-image">
+                                <img src="./usuario.png">
+                            </div>
+                            <i class="fa fa-angle-left"></i>
                         </div>
-                        <div class="user-data">
+                        <div class="header-bottom">
                             <h2>Olá, Eduardo</h2>
-                            <small>e.duardo@email.com</small>
-                        </div>
-                        <div class="menu">
+                            <p>O que nós podemos fazer por você hoje ?</p>
                         </div>
                     </header>
 
-                    <section>
-                        <div class="card">
-                            <div class="card-data">
-                                <h1>Coisas sobre dinheiro</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit !</p>
-                                <button>Ver registros</button>
-                            </div>
-                            <div class="card-image">
-                                <img src="./Money_Flat_Icon.svg">
-                            </div>
-                        </div>
-                    </section>
-
                     <section class="escolhas">
                         <div class="escolhas-card">
-                            <p>Contrate um contador !</p>
+                            <div class="escolhas-card__left">
+                                <div class="escolhas-icon">
+                                    <i class="fa fa-money"></i>
+                                </div>
+                                <div class="escolhas-card-description">
+                                    <p class="card-title">Contrate um contador</p>
+                                    <p class="card-description">Deixa a gente te ajudar !</p>
+                                </div>
+                            </div>
+                            <div class="escolhas-arrow">
+                                <i class="fa fa-angle-right"></i>
+                            </div>
                         </div>
                     </section>
                 </div>
             </div>
-
 
             <div class="tela">
                 <p style="text-align: center; font-weight: bold;">Tela de abertura do APP</p>
